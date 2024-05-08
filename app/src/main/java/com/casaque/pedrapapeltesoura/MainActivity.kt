@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         val btnRock = findViewById<Button>(R.id.btnRock)
         val btnPaper = findViewById<Button>(R.id.btnPaper)
         val btnScissors = findViewById<Button>(R.id.btnScissors)
+        val btnLizard = findViewById<Button>(R.id.btnLizard)
+        val btnSpock = findViewById<Button>(R.id.btnSpock)
         val tvResult = findViewById<TextView>(R.id.tvResult)
         tvBot1Choice = findViewById(R.id.tvBot1Choice)
         tvBot2Choice = findViewById(R.id.tvBot2Choice)
@@ -27,6 +29,8 @@ class MainActivity : AppCompatActivity() {
         btnRock.setOnClickListener { playGame(Choice.ROCK) }
         btnPaper.setOnClickListener { playGame(Choice.PAPER) }
         btnScissors.setOnClickListener { playGame(Choice.SCISSORS) }
+        btnLizard.setOnClickListener { playGame(Choice.LIZARD) }
+        btnSpock.setOnClickListener { playGame(Choice.SPOCK) }
     }
 
     private fun playGame(userChoice: Choice) {
